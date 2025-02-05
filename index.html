@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TheApex | Dev - Maintenance</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="./assets/circle.png">
+
     <style>
         body {
             margin: 0;
@@ -17,25 +19,33 @@
             background-repeat: no-repeat;
             font-family: 'Raleway', sans-serif;
             color: #fff;
-        }
-        .main {
             display: flex;
             flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            text-align: center;
+            position: relative;
         }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+            padding: 15px 30px;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            z-index: 2;
+        }
+
         .logo {
             display: flex;
             align-items: center;
             gap: 10px;
         }
+
         .logo img {
             width: 47px;
             height: 45px;
             border-radius: 15%;
         }
+
         .logo h2 {
             font-size: 20px;
             font-weight: 400;
@@ -43,45 +53,76 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
+        .main {
+            display: flex;
+            align-items: flex-start;
+            justify-content: flex-start;
+            height: 100vh;
+            padding: 100px 50px;
+            position: relative;
+            z-index: 2;
+        }
+
         .content {
             max-width: 600px;
-            margin-top: 20px;
+            text-align: left;
         }
+
         .content h1 {
             margin: 10px 0;
+            font-size: 2.5rem;
+            font-weight: 700;
         }
+
         .content p {
-            font-size: 15px;
+            font-size: 1rem;
             font-weight: 400;
-            color: #6f54a1;
+            color: #ccc;
+            line-height: 1.6;
         }
+
         .cntct {
             display: flex;
             gap: 20px;
-            justify-content: center;
             font-size: 25px;
             margin-top: 20px;
         }
+
         .cntct a {
             color: #fff;
             text-decoration: none;
             transition: transform 0.3s ease-in-out;
         }
+
         .cntct a:hover {
             transform: scale(1.3);
             cursor: pointer;
         }
+
+        .sitemap {
+            position: absolute;
+            bottom: 20px;
+            left: 50px;
+        }
+
+        .sitemap img {
+            width: 30px;
+            height: 30px;
+        }
+
     </style>
 </head>
 <body>
-    <div class="main">
+    <div class="navbar">
         <div class="logo">
             <img src="./assets/b3.png" alt="logo">
             <h2>TheApex | Dev</h2>
         </div>
+    </div>
+    <div class="main">
         <div class="content">
-            <h1>Website</h1>
-            <h1>Under Maintenance!</h1>
+            <h1>Website Under Maintenance!</h1>
             <p>We are currently working on the website to bring you the best experience. If you need assistance, feel free to contact us below.</p>
             <h2>Contact Us:</h2>
             <div class="cntct">
