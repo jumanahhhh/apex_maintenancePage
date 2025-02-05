@@ -1,14 +1,96 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link class="wblgo" rel="icon" type="image/svg+xml" href="./src/assets/circle.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="index.css">
-    <title>TheApex|Dev</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheApex | Dev - Maintenance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100vh;
+            background-image: url('./assets/bmain.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            font-family: 'Raleway', sans-serif;
+            color: #fff;
+        }
+        .main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+        }
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo img {
+            width: 47px;
+            height: 45px;
+            border-radius: 15%;
+        }
+        .logo h2 {
+            font-size: 20px;
+            font-weight: 400;
+            background: linear-gradient(90deg, rgba(173, 18, 186, 1) 42%, rgba(252, 166, 141, 1) 88%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .content {
+            max-width: 600px;
+            margin-top: 20px;
+        }
+        .content h1 {
+            margin: 10px 0;
+        }
+        .content p {
+            font-size: 15px;
+            font-weight: 400;
+            color: #6f54a1;
+        }
+        .cntct {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            font-size: 25px;
+            margin-top: 20px;
+        }
+        .cntct a {
+            color: #fff;
+            text-decoration: none;
+            transition: transform 0.3s ease-in-out;
+        }
+        .cntct a:hover {
+            transform: scale(1.3);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="logo">
+            <img src="./assets/b3.png" alt="logo">
+            <h2>TheApex | Dev</h2>
+        </div>
+        <div class="content">
+            <h1>Website</h1>
+            <h1>Under Maintenance!</h1>
+            <p>We are currently working on the website to bring you the best experience. If you need assistance, feel free to contact us below.</p>
+            <h2>Contact Us:</h2>
+            <div class="cntct">
+                <a href="tel:+91-9019850972">📞</a>
+                <a href="https://wa.me/9019850972">💬</a>
+                <a href="mailto:amaansaify64@email.com">📧</a>
+            </div>
+            <p>@theapex5@gmail.com</p>
+        </div>
+    </div>
+</body>
 </html>
