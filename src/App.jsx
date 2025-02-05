@@ -18,7 +18,6 @@ const App = () => {
         <p>We are currently working on the website to bring you the best experience.If you need assistance, feel free to contact us below.</p> <br></br>
         <h2>Contact Us :</h2>
         <div className="cntct">
-          {/* <a href="https://www.google.com">Contact Us</a> */}
           <a className="call" href="tel:+91-9019850972">
             <IoMdCall />
           </a>
